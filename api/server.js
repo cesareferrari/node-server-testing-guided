@@ -16,6 +16,7 @@ server.get('/hobbits', (req, res) => {
       res.status(200).json(rows);
     })
     .catch(error => {
+      console.log(error);
       res.status(500).json(error);
     });
 });
